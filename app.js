@@ -5,7 +5,7 @@ const Blog = require("./models/blog");
 const app = express();
 
 const dbURI =
-  "mongodb+srv://aarush123:aarush123@mern-cluster.4lhno.mongodb.net/node-tuts?retryWrites=true&w=majority";
+  "mongodb+srv://<username>:<password>@<cluster name>.4lhno.mongodb.net/<collection name>?retryWrites=true&w=majority";
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => app.listen(3000))
